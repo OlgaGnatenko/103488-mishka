@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>HTML Academy: Мишка - Каталог Товаров</title>
+  </head>
+<body class="page">
+  <div class="modal">
+    <div class="modal__title">
+      <h2>Добавить в корзину</h2>
+    </div>
+    <div class="modal__size">
+      <p>
+        Выберите размер:
+      </p>
+      <div class="modal__size-list">
+        <label class="modal__size-item" for="size-small">
+          <input type="radio" name="size-list" id="size-small"/>
+          <span>S</span>
+        </label>
+        <label class="modal__size-item" for="size-medium">
+          <input type="radio" name="size-list" id="size-medium"/>
+          <span>M</span>
+        </label>
+        <label class="modal__size-item" for="size-large">
+          <input type="radio" name="size-list" id="size-large"/>
+          <span>L</span>
+        </label>
+      </div>
+      <button class="modal__add btn">Добавить</button>
+    </div>
+  </div>
+  <header class="page-header">
+    <div class="page-header__logo">
+      <img src="http://placehold.it/90x35" width="90" height="35" alt="page-header__logo"/>
+    </div>
+
+    <nav class="main-nav main-nav--closed">
+      <button class="main-nav__toggle" type="button"></button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list">
+          <li class="main-nav__list-item">
+            <a href="#">Каталог товаров</a>
+          </li>
+          <li class="main-nav__list-item">
+            <a href="#">Вязание на заказ</a>
+          </li>
+          <li class="main-nav__list-item">
+            <a href="#">Поиск по сайту</a>
+          </li>
+          <li class="main-nav__list-item">
+            <a href="#">Корзина: пока пуста</a>
+          </li>
+        </ul>
+      </div>
+
+      <ul class="main-nav__user-list">
+        <li class="main-nav__user-item">
+          <img src="http://placehold.it/15x15" alt="search"/>
+        </li>
+        <li class="main-nav__user-item">
+          <img src="http://placehold.it/15x15" alt="cart"/>
+          <span>Корзина: пока пуста</span>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="page-header__title">
+      <h1>Каталог товаров</h1>
+    </div>
+  </header>
+
+  <section class="catalog">
+    <ul class="catalog__items">
+      <li class="item-desc">
+        <div class="item-desc__img">
+          <img width="60" src="http://placehold.it/60x60" alt="item-desc__img"/>
+        </div>
+        <div class="item-desc__info">
+          <h3 class="item-desc__title">Зайчик-попрыгайчик</h3>
+          <p class="item-desc__params">Рост 30 см, вес 200 г</p>
+          <div class="item-desc__price">
+            <span class="item-desc__value">1200 руб.</span>
+            <button class="item-desc__buy">
+              <img src="http://placehold.it/15x15" alt="item-desc__buy"/>
+            </button>
+          </div>
+        </div>
+      </li>
+      <li class="item-desc">
+        <div class="item-desc__img">
+          <img width="60" src="http://placehold.it/60x60" alt="item-desc__img"/>
+        </div>
+        <div class="item-desc__info">
+          <h3 class="item-desc__title">Корзинка для белья</h3>
+          <p class="item-desc__params">Диаметр 15 см, высота 10 см</p>
+          <div class="item-desc__price">
+            <span class="item-desc__value">690 руб.</span>
+            <button class="item-desc__buy">
+              <img src="http://placehold.it/15x15" alt="item-desc__buy"/>
+            </button>
+          </div>
+        </div>
+      </li>
+      <li class="item-desc">
+        <div class="item-desc__img">
+          <img width="60" src="http://placehold.it/60x60" alt="item-desc__img"/>
+        </div>
+        <div class="item-desc__info">
+          <h3 class="item-desc__title">Большая корзина для игрушек</h3>
+          <p class="item-desc__params">Диаметр 30 см, высота 30 см</p>
+          <div class="item-desc__price">
+            <span class="item-desc__value">1500 руб.</span>
+            <button class="item-desc__buy">
+              <img src="http://placehold.it/15x15" alt="item-desc__buy"/>
+            </button>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <section class="production">
+    <div class="production__header">
+      <img src="http://placehold.it/15x15" alt="production__header"/>
+      <h2 class="production__title">Процесс производства</h2>
+    </div>
+    <div class="production__video">
+      <video width="200">
+        <source src="http://placehold.it/15x15.mp4" type="video/mp4">
+        <source src="http://placehold.it/15x15.ogg" type="video/ogg">
+        Ваш браузер не поддерживает видео
+      </video>
+    </div>
+    <div class="production__desc">
+      <span>
+        По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
+      </span>
+    </div>
+    <button class="production__buy btn">Сделать заказ</button>
+  </section>
+
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <div class="page-footer__logo">
+        <img src="http://placehold.it/60x15" alt="page-footer__logo"/>
+      </div>
+      <div class="page-footer__social">
+        <div class="social-links">
+          <a class="social-link social-link--vk" href="#"></a>
+          <a class="social-link social-link--fb" href="#"></a>
+          <a class="social-link social-link--in" href="#"></a>
+        </div>
+        <div class="page-footer__copyright">
+          <span class="page-footer__copyright-text">Разработано</span>
+          <a class="page-footer__copyright-link" href="#">
+            <img src="http://placehold.it/15x20" alt="page-footer__copyright-link"/>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
